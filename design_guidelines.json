@@ -1,0 +1,90 @@
+{
+  "project_title": "Alieu Bojang — Cyber-Fluid Interactive Developer & Game Creator Portfolio",
+  "app_type": "portfolio",
+  "theme": {
+    "base": "dark",
+    "background_color": "#090B0E",
+    "surface_color": "#12161F",
+    "surface_border": "#1E2638",
+    "accent_primary": "#10B981",
+    "accent_glow": "#059669",
+    "accent_secondary": "#0EA5E9",
+    "text_primary": "#F3F4F6",
+    "text_muted": "#9CA3AF"
+  },
+  "typography": {
+    "heading_font": "Syne, sans-serif",
+    "body_font": "Plus Jakarta Sans, sans-serif",
+    "mono_font": "JetBrains Mono, monospace",
+    "font_scale": {
+      "hero_heading": "text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight",
+      "section_heading": "text-2xl sm:text-4xl lg:text-5xl font-bold tracking-tight",
+      "card_title": "text-xl sm:text-2xl font-semibold",
+      "body_text": "text-sm sm:text-base leading-relaxed text-slate-300",
+      "eyebrow": "text-xs font-mono tracking-[0.25em] text-emerald-400 uppercase"
+    }
+  },
+  "visual_enhancers": {
+    "webgl_fluid_background": "Interactive HTML5/WebGL fluid simulation canvas running full-screen behind content with adjustable viscosity, green/cyan color splats on cursor velocity, and subtle ambient particle field.",
+    "glassmorphism": "backdrop-blur-xl bg-slate-950/70 border border-slate-800/80 shadow-2xl shadow-emerald-950/20",
+    "paint_resume_reveal": "Canvas-based scratch/paint eraser mask revealing Alieu's high-res interactive resume card upon cursor swipe, complete with download PDF trigger and zoom view.",
+    "grid_borders": "Subtle 1px grid overlay with hover highlight effects on bento cards",
+    "marquee": "Slow kinetic editorial marquee separating hero and projects, displaying key stats like '10M+ Roblox Plays', 'Copilot Agents', 'AI Data Innovation', 'Bridgewater State 2027'"
+  },
+  "project_assets": [
+    {
+      "name": "StealthGPT",
+      "path": "/assets/stealth.png",
+      "description": "Disguises AI chat sites as neutral productivity pages via hotkey toggle",
+      "tags": ["React", "Extension", "AI", "Privacy"]
+    },
+    {
+      "name": "Recoil Bot",
+      "path": "/assets/recoil.png",
+      "description": "Multipurpose Discord bot for ZERO HOUR with Gemini Q&A and local knowledge base",
+      "tags": ["Discord.js", "Gemini API", "Lua", "Roblox"]
+    },
+    {
+      "name": "Zero Hour (Roblox WWII FPS)",
+      "path": "/assets/zerohour.png",
+      "url": "https://www.roblox.com/games/80481292697597/World-War-II",
+      "description": "1939 WWII Allies vs Axis tactical FPS with over 10 Million plays",
+      "tags": ["Roblox Studio", "Luau", "Game Architecture", "10M+ Plays"]
+    }
+  ],
+  "layout_architecture": {
+    "navigation": "Sticky top bar with custom monogram SVG logo, interactive nav links (Projects, Experience, Paint-Resume, Contact), theme/fluid toggle button, and Quick Contact CTA.",
+    "hero_section": "Masked line-by-line staggered reveal using Framer Motion. Headlines highlighting CS Student @ Bridgewater State & IT Intern @ Steptoe LLP with live status badge.",
+    "bento_grid": "Asymmetric bento grid showcasing 3 main featured projects + Lightnata Flutter prototype with live preview modals, links, and asset cards.",
+    "experience_skills": "Dual-tab/interactive timeline showing Steptoe LLP IT Intern AI & Data, Bridgewater State CS, and Roblox Dev milestones alongside tagged tech stack pills.",
+    "resume_paint_section": "Interactive 'Paint-it-Full' resume reveal canvas with reset button, view full modal, and instant PDF download trigger.",
+    "contact_section": "Modern high-contrast contact form with form validation, local storage fallback, copy email/discord buttons, and direct social links.",
+    "footer": "Editorial dark footer with live clock, location (Bridgewater, MA), custom logo, and back-to-top scroll button."
+  },
+  "testing_attributes": {
+    "nav_logo": "nav-logo",
+    "nav_projects": "nav-link-projects",
+    "nav_experience": "nav-link-experience",
+    "nav_resume": "nav-link-resume",
+    "nav_contact": "nav-link-contact",
+    "hero_cta": "hero-cta-projects",
+    "hero_resume_cta": "hero-cta-resume",
+    "project_card_stealth": "project-card-stealthgpt",
+    "project_card_recoil": "project-card-recoilbot",
+    "project_card_zerohour": "project-card-zerohour",
+    "resume_canvas": "resume-paint-canvas",
+    "resume_download": "resume-download-btn",
+    "contact_form_name": "contact-input-name",
+    "contact_form_email": "contact-input-email",
+    "contact_form_message": "contact-input-message",
+    "contact_form_submit": "contact-submit-btn"
+  },
+  "instructions_to_main_agent": [
+    "Ensure all components are built in JS format (.js or .jsx) in accordance with the project structure.",
+    "Implement Lenis smooth scrolling or native fluid motion handlers without scroll jank.",
+    "Provide a robust fall-back canvas for the WebGL fluid simulation in case WebGL context fails on low-end devices.",
+    "Ensure all buttons and interactive cards feature visible focus rings and accessible data-testid attributes.",
+    "Clean up the stock splash page in App.js completely and replace with the main portfolio layout."
+  ]
+},
+overwrite:true,path:

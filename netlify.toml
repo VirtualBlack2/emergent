@@ -1,0 +1,13 @@
+[build]
+  base = "frontend"
+  command = "CI=false yarn build"
+  publish = "build"
+
+[build.environment]
+  NODE_VERSION = "20"
+  REACT_APP_FORM_PROVIDER = "netlify"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
